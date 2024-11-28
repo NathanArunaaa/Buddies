@@ -6,7 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E5A865472CF7F4B800AE71F4 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5A865462CF7F4B700AE71F4 /* WidgetKit.framework */; };
+		E5A865492CF7F4B800AE71F4 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5A865482CF7F4B800AE71F4 /* SwiftUI.framework */; };
+		E5A8655A2CF7F4B900AE71F4 /* BuddiesWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E5A865442CF7F4B700AE71F4 /* BuddiesWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
+		E5A865582CF7F4B900AE71F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5BC31022CF7B53E00C38753 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5A865432CF7F4B700AE71F4;
+			remoteInfo = BuddiesWidgetExtension;
+		};
 		E5BC311B2CF7B53F00C38753 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E5BC31022CF7B53E00C38753 /* Project object */;
@@ -23,13 +36,48 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E5A8655B2CF7F4B900AE71F4 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E5A8655A2CF7F4B900AE71F4 /* BuddiesWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		E5A865442CF7F4B700AE71F4 /* BuddiesWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BuddiesWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5A865462CF7F4B700AE71F4 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E5A865482CF7F4B800AE71F4 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		E5BC310A2CF7B53E00C38753 /* Buddies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Buddies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5BC311A2CF7B53F00C38753 /* BuddiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuddiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5BC31242CF7B53F00C38753 /* BuddiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuddiesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E5A8655E2CF7F4B900AE71F4 /* Exceptions for "BuddiesWidget" folder in "BuddiesWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E5A865432CF7F4B700AE71F4 /* BuddiesWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		E5A8654A2CF7F4B800AE71F4 /* BuddiesWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E5A8655E2CF7F4B900AE71F4 /* Exceptions for "BuddiesWidget" folder in "BuddiesWidgetExtension" target */,
+			);
+			path = BuddiesWidget;
+			sourceTree = "<group>";
+		};
 		E5BC310C2CF7B53E00C38753 /* Buddies */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Buddies;
@@ -48,6 +96,15 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E5A865412CF7F4B700AE71F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5A865492CF7F4B800AE71F4 /* SwiftUI.framework in Frameworks */,
+				E5A865472CF7F4B800AE71F4 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E5BC31072CF7B53E00C38753 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,12 +129,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E5A865452CF7F4B700AE71F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5A865462CF7F4B700AE71F4 /* WidgetKit.framework */,
+				E5A865482CF7F4B800AE71F4 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E5BC31012CF7B53E00C38753 = {
 			isa = PBXGroup;
 			children = (
 				E5BC310C2CF7B53E00C38753 /* Buddies */,
 				E5BC311D2CF7B53F00C38753 /* BuddiesTests */,
 				E5BC31272CF7B53F00C38753 /* BuddiesUITests */,
+				E5A8654A2CF7F4B800AE71F4 /* BuddiesWidget */,
+				E5A865452CF7F4B700AE71F4 /* Frameworks */,
 				E5BC310B2CF7B53E00C38753 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +156,7 @@
 				E5BC310A2CF7B53E00C38753 /* Buddies.app */,
 				E5BC311A2CF7B53F00C38753 /* BuddiesTests.xctest */,
 				E5BC31242CF7B53F00C38753 /* BuddiesUITests.xctest */,
+				E5A865442CF7F4B700AE71F4 /* BuddiesWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +164,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E5A865432CF7F4B700AE71F4 /* BuddiesWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5A8655F2CF7F4B900AE71F4 /* Build configuration list for PBXNativeTarget "BuddiesWidgetExtension" */;
+			buildPhases = (
+				E5A865402CF7F4B700AE71F4 /* Sources */,
+				E5A865412CF7F4B700AE71F4 /* Frameworks */,
+				E5A865422CF7F4B700AE71F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E5A8654A2CF7F4B800AE71F4 /* BuddiesWidget */,
+			);
+			name = BuddiesWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = BuddiesWidgetExtension;
+			productReference = E5A865442CF7F4B700AE71F4 /* BuddiesWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		E5BC31092CF7B53E00C38753 /* Buddies */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5BC312E2CF7B53F00C38753 /* Build configuration list for PBXNativeTarget "Buddies" */;
@@ -102,10 +193,12 @@
 				E5BC31062CF7B53E00C38753 /* Sources */,
 				E5BC31072CF7B53E00C38753 /* Frameworks */,
 				E5BC31082CF7B53E00C38753 /* Resources */,
+				E5A8655B2CF7F4B900AE71F4 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E5A865592CF7F4B900AE71F4 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				E5BC310C2CF7B53E00C38753 /* Buddies */,
@@ -173,6 +266,9 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					E5A865432CF7F4B700AE71F4 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					E5BC31092CF7B53E00C38753 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -203,11 +299,19 @@
 				E5BC31092CF7B53E00C38753 /* Buddies */,
 				E5BC31192CF7B53F00C38753 /* BuddiesTests */,
 				E5BC31232CF7B53F00C38753 /* BuddiesUITests */,
+				E5A865432CF7F4B700AE71F4 /* BuddiesWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E5A865422CF7F4B700AE71F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E5BC31082CF7B53E00C38753 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +336,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E5A865402CF7F4B700AE71F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E5BC31062CF7B53E00C38753 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +367,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		E5A865592CF7F4B900AE71F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5A865432CF7F4B700AE71F4 /* BuddiesWidgetExtension */;
+			targetProxy = E5A865582CF7F4B900AE71F4 /* PBXContainerItemProxy */;
+		};
 		E5BC311C2CF7B53F00C38753 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E5BC31092CF7B53E00C38753 /* Buddies */;
@@ -269,6 +385,60 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		E5A8655C2CF7F4B900AE71F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U382FCYHUJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BuddiesWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BuddiesWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nathanaruna.Buddies.BuddiesWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E5A8655D2CF7F4B900AE71F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U382FCYHUJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BuddiesWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BuddiesWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nathanaruna.Buddies.BuddiesWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		E5BC312C2CF7B53F00C38753 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -521,6 +691,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E5A8655F2CF7F4B900AE71F4 /* Build configuration list for PBXNativeTarget "BuddiesWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5A8655C2CF7F4B900AE71F4 /* Debug */,
+				E5A8655D2CF7F4B900AE71F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E5BC31052CF7B53E00C38753 /* Build configuration list for PBXProject "Buddies" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -11,7 +11,9 @@ import SwiftUI
 struct BuddiesApp: App {
     var body: some Scene {
         WindowGroup {
-            RegisterView()
+            NavigationView {
+                WelcomeView()
+            }
         }
     }
 }
