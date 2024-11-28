@@ -12,7 +12,7 @@ struct BuddiesApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                WelcomeView()
+                MainView()
             }
         }
     }
